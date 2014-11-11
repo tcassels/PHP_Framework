@@ -1,0 +1,5 @@
+* Limit file reads to a set directory. All provided paths will be added 
+  to that path.
+  
+* Configs, configs, configs
+* Documentation
