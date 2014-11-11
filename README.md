@@ -47,8 +47,8 @@ Install
 -------
 
 Installation is simple. 
-1. Copy everything to your desired directory and set your webservers document root to the public directory.
-2. Edit html/template.html with your desired changes and place your page html documents in apps/page/html.
+* Copy everything to your desired directory and set your webservers document root to the public directory.
+* Edit html/template.html with your desired changes and place your page html documents in apps/page/html.
 
 
 How to Participate
