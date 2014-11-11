@@ -1,0 +1,14 @@
+/index.php?1=stuff&2=stuff&3=stuff etc
+
+/api/v1/json
+
+/user/username
+/user/username/edit
+/user/login
+/user/logout
+/user/register
+
+/page/pagename
+
+/blog/year/month/day/postname
+/blog/year/month/day/postname/edit

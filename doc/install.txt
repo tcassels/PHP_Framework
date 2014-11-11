@@ -1,0 +1,3 @@
+1.  Copy all the files to a directory of your choosing.
+2.  Set your webserver document root to the public directory.
+3.  Chown the files within apps/page/html appropriately so your webserver user may write to them. 

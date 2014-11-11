@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>[@site_title]</title>
+		<style type="text/css">
+			body {
+				margin: 0px;
+			}
+			#header {
+				background-color: lightblue;
+				padding: 5px;
+			}
+			#top_links {
+				height: 30px;
+				width: 100%;
+				background-color: lightblue;
+			}
+			#top_links ul {
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+			}
+			#top_links ul li {
+				display: block;
+				position: relative;
+				float: left
+			}
+			#top_links li ul {
+				display: none;
+			}
+			#top_links ul li a {
+				display: block;
+				padding: 5px 10px 5px 10px;
+				text-decoration: none;
+				color: black;
+			}
+			#top_links ul li a:hover {
+				background-color: white;
+			}
+			#top_links li:hover ul {
+				display: block;
+				position: absolute;
+			}
+			#top_links li:hover li {
+				float: none;
+			}
+			#top_links li:hover a {
+				background-color: skyblue;
+			}
+			#content {
+				clear: both;
+				padding: 10px;
+			}
+			#footer {
+				background-color: lightblue;
+			}
+		</style>
+		<script type="text/javascript" >
+			window.onload = function()
+			{
+			}
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<font size="6">[@site_title]</font>
+			</div>
+			<div id="top_links">
+				<ul>
+					<li><a href="/page/home">Home</a></li>
+					<li>
+						<a href="/page/products">Products</a>
+						<ul>
+							<li><a href="/page/products-hardware">Hardware</a></li>
+							<li><a href="/page/products-software">Software</a></li>
+						</ul>
+					</li>
+					<li><a href="/page/services">Services</a></li>
+				</ul>
+			</div>
+			<div id="content">
+				[@body]
+			</div>
+			<div id="footer">
+				<font size="2">Copyright 2014 [@site_title]</font>
+			</div>
+		</div>
+	</body>
+</html>
