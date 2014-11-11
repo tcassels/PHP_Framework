@@ -21,6 +21,9 @@
 
 global $SITE_TITLE;
 
+
+# This is the title that will show up in the <title> tags and in the header
+# and footer 
 $SITE_TITLE = "Your Site Name Here";
 
 ?>

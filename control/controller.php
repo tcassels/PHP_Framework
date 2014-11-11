@@ -27,20 +27,31 @@ require_once '../config/site.php';
 class Controller {
 	public static function launch()
 	{
+		# Bring in the globals we will be using
 		global $PATH_ARRAY;
 		global $SITE_TITLE;
+		# $PATH_ARRAY is a global array provided to us by public/index.php
 		$app = $PATH_ARRAY[0];
+		# Path to our application, the .. will be replaced by a config option
 		$file_path = "../apps/$app/$app.php";
+		# Ensure our app exists
 		if (file_exists($file_path)) {
+			# If it exists, require it and launch it saving the output to send to
+			# the view for "rendering"
 			require_once $file_path;
 			$app_data = $app::launch();
 		} else {
+			# If the app doesn't exist, error
 			$app_data = 'file does not exist';
 		}
+		# Require the view and set our chosen template, config....
 		require_once '../view/view.php';
 		$template = '../html/template.html';
+		# Turn the output of the app into an array to be included in our template
 		$app_keys = array('[@body]'=>$app_data);
+		# Build the array of site config items. This needs to be "fixed"
 		$site_keys = array('[@site_title]'=>$SITE_TITLE);
+		# Merge the two arrays and pass everything to the view for rendering
 		$keys = array_merge($site_keys, $app_keys);
 		\Framework\View\View::render($template, $keys);
 	}

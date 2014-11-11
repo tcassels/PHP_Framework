@@ -57,9 +57,14 @@ class Template {
 	
 	public function parse()
 	{
+		# Read the template file
 		$file_data = \Framework\Lib\FIO::fio_read($this->_template_file);
+		# Rename it while preserving the original, for the future.
 		$parsed_data = $file_data;
+		# Iterate over each item in the array of keys provided
 		foreach ($this->_keys as $key=>$value) {
+			# Find each instance of the provided key and replace it with the
+			# provided value
 			$parsed_data = str_replace($key, $value, $parsed_data);
 		}
 		return $parsed_data;

@@ -22,6 +22,9 @@
 class Page {
 	public static function launch()
 	{
+		# All we do here is call our app specific OO code from this procedural
+		# stuff. This way the framework doesn't have to know about the namespace
+		# of the app.
 		require_once '../apps/page/control/controller.php';
 		return \Framework\Apps\Page\Control\Controller::launch();
 	}

@@ -19,18 +19,23 @@
 # Filename: public/index.php
 
 
+# Turn on increased error reporting. Only for now, will be moved to a config
 error_reporting(6143);
 ini_set('display_errors', 'On');
 
+# Make sure .htaccess is passing us the parameters
 if (isset($_GET['path'])) {
+	# If we get the parameters, blow it up into an array
 	$PATH_ARRAY = explode('/', $_GET['path']);
 } else {
+	# If we don't get the parameters set it to home. Needs to be a config option
 	$PATH_ARRAY = array('page', 'home');
 }
-#print_r($PATH_ARRAY);
 
 require_once '../bootstrap.php';
 
+# Once we have all the details, fireoff the bootstrap.
+# This will load the main controller.
 \Framework\Bootstrap\Bootstrap::launch();
 
 ?>
