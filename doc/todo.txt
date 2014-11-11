@@ -1,5 +1,7 @@
 * Limit file reads to a set directory. All provided paths will be added 
   to that path.
-  
 * Configs, configs, configs
 * Documentation
+* Database
+* Improve on the page app
+* Better way to implement globals
