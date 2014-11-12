@@ -1,7 +1,7 @@
 <?php
 ########################################################################
 # One line to give the program's name and a brief idea of what it does.
-# Copyright (C) 2014 Timothy Cassels <cassels2025@gmail.com
+# Copyright (C) 2014 Timothy Cassels <cassels2025@gmail.com>
 # 
 # This program is free software; you can redistribute it and/or modify 
 # it under the terms of the GNU General Public License version 2 as 
