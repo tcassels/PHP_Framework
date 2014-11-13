@@ -5,3 +5,4 @@
 * Database
 * Improve on the page app
 * Better way to implement globals
+* Improve logging
