@@ -29,6 +29,7 @@ class MySQL {
 	{
 		try {
 			mysql_connect($host, $user, $pass);
+		} catch (Exception $e) {
 		}
 		return $this;
 	}
@@ -37,6 +38,7 @@ class MySQL {
 	{
 		try {
 			mysql_select_db($db);
+		} catch (Exception $e) {
 		}
 		return $this;
 	}
