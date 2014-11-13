@@ -20,10 +20,12 @@
 
 
 global $SITE_TITLE;
+global $BASE_PATH;
 
 
 # This is the title that will show up in the <title> tags and in the header
 # and footer 
 $SITE_TITLE = "Your Site Name Here";
+$BASE_PATH = "/var/www/framework";
 
 ?>
